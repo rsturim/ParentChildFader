@@ -1,0 +1,88 @@
+html {
+  font-family:arial, helvetica, sans-serif;
+}
+a {outline: none;}
+a:active, a:focus { outline: 0 }
+a:focus {-moz-outline-style: none;}
+
+#page-wrap {
+  position:relative;
+  margin:0 auto;
+  width:1000px;
+}
+#fader{
+  position:relative;
+  border: solid 6px #999;
+  height:200px;
+  width:965px;
+  margin: 0 auto;
+}
+
+.parent-set {
+  position:absolute;
+  left:0;
+  height:200px;
+  width:320px;
+  border-right: solid 6px #999;
+}
+
+.child-sets {
+  position:absolute;
+  left:325px;
+  height:200px;
+  width:640px;
+}
+
+.parent-set ul, .child-sets ul {
+  margin:0;
+  padding:0;
+  list-style-type:none;
+  position:relative;
+}
+
+.parent-set ul li, .child-sets ul li {
+  margin:0;
+  padding:0;
+  display:none;
+}
+
+.parent-set ul li.current, .child-sets ul li.current {
+  position:absolute;
+  top:0;
+  display:block;
+}
+
+#start-stop {
+  position:absolute;
+  top:224px;
+  left:8px;
+  width:35px;
+  text-align:center; 
+}
+
+#fader-controls {
+  color:#222;
+  position:absolute;
+  top:224px;
+  right:12px; 
+}
+
+#start-stop:link, 
+#start-stop:visited, 
+#fader-controls a:link, 
+#fader-controls a:visited {
+  color:#666;
+  border: solid 1px #999;
+  background-color:#ccc;
+  padding:1px 8px;
+  margin:0 0 0 3px;
+  text-decoration:none;
+}
+
+#start-stop:hover, #fader-controls a:hover { background-color:#999; color:#fff;}
+#fader-controls a:active { background-color:#fff; color:#444;}
+#fader-controls a.selected {
+  border: solid 1px #555;
+  background-color:#555;
+  color:#eee;
+}

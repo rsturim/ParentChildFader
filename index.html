@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Parent-Child Fader</title>
+  <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script src="js/jquery.parentChildFader.js" type="text/javascript" charset="utf-8"></script>
+
+  <script type="text/javascript">
+  $(function () {
+    jQuery($("div#fader")).fader();
+
+    // jQuery($("div#fader")).fader({
+    //   showStartStopControl: true,
+    //   showNavigation: true,
+    //   fadeInSpeed: 2500,
+    //   fadeOutSpeed: 2500,
+    //   interval: 4000
+    // });
+  });
+  </script>
+</head>
+
+<body>
+  <div id="page-wrap">
+
+    <div id="fader">
+      <div class="parent-set">
+        <ul>
+          <li><img src="images/parent-1.jpg" alt=""></li>
+          <li><img src="images/parent-2.jpg" alt=""></li>
+          <li><img src="images/parent-3.jpg" alt=""></li>
+        </ul>
+      </div>
+      <div class="child-sets">
+        <ul>
+          <li><img src="images/child-1.jpg" alt=""></li>
+          <li><img src="images/child-2.jpg" alt=""></li>
+          <li><img src="images/child-3.jpg" alt=""></li>
+        </ul>
+        <ul>
+          <li><img src="images/child-4.jpg" alt=""></li>
+          <li><img src="images/child-5.jpg" alt=""></li>
+          <li><img src="images/child-6.jpg" alt=""></li>
+        </ul>
+        <ul>
+          <li><img src="images/child-7.jpg" alt=""></li>
+          <li><img src="images/child-8.jpg" alt=""></li>
+          <li><img src="images/child-9.jpg" alt=""></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
