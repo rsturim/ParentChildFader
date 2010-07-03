@@ -21,8 +21,8 @@ h3. Markup Usage
     <!-- Parent Images -->
     <div class="parent-set">
       <ul>
-        <li><img src="images/parent-1.jpg" alt=""></li><!-- Parent 1 (associated with Childset 1) -->
-        <li><img src="images/parent-2.jpg" alt=""></li><!-- Parent 2 (associated with Childset 2) -->
+        <li><img src="images/parent-1.jpg" alt="" /></li><!-- Parent 1 (associated with Childset 1) -->
+        <li><img src="images/parent-2.jpg" alt="" /></li><!-- Parent 2 (associated with Childset 2) -->
       </ul>
     </div>
 
@@ -31,16 +31,16 @@ h3. Markup Usage
 
       <!-- Childset 1 -->
       <ul>
-        <li><img src="images/child-1.jpg" alt=""></li>
-        <li><img src="images/child-2.jpg" alt=""></li>
-        <li><img src="images/child-3.jpg" alt=""></li>
+        <li><img src="images/child-1.jpg" alt="" /></li>
+        <li><img src="images/child-2.jpg" alt="" /></li>
+        <li><img src="images/child-3.jpg" alt="" /></li>
       </ul>
 
       <!-- Childset 2 -->
       <ul>
-        <li><img src="images/child-4.jpg" alt=""></li>
-        <li><img src="images/child-5.jpg" alt=""></li>
-        <li><img src="images/child-6.jpg" alt=""></li>
+        <li><img src="images/child-4.jpg" alt="" /></li>
+        <li><img src="images/child-5.jpg" alt="" /></li>
+        <li><img src="images/child-6.jpg" alt="" /></li>
       </ul>
 
     </div>
