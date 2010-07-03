@@ -34,7 +34,7 @@
         }
 
         function buildStartStopControl() {
-            $startStopControl = $("<a href='#' id='start-stop'></a>").html($playing ? "stop" : "start");
+            $startStopControl = $("<a href='#' id='start-stop'></a>").html($playing ? opts.stopText : opts.startText);
             ($startStopControl).insertAfter($fader);
             $startStopControl.click(function (e) {
                 startStop($playing);
@@ -54,7 +54,7 @@
             };
 
             if (opts.showStartStopControl) {
-                if (opts.autoplay) $startStopControl.toggleClass("playing", playing).html(playing ? "stop" : "start");
+                if (opts.autoplay) $startStopControl.toggleClass("playing", playing).html(playing ? opts.stopText : opts.startText);
             }
         };
 
@@ -139,6 +139,8 @@
 
     $.fn.fader.defaults = {
         autoplay: true,
+        startText: "start",
+        stopText: "stop",
         fadeInSpeed: "normal",
         fadeOutSpeed: "normal",
         pauseOnHover: true,
