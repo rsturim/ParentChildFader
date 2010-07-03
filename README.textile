@@ -2,7 +2,6 @@ h1. ParentChildFader jQuery Plugin
 
 This is a simple image fader plugin much in the spirit of what you can find with the "jQuery Cycle":http://jquery.malsup.com/cycle/ plugin -- except this implementation allows authors to define parents with corresponding children.
 
-
 h2. Features
 
 * Parent/Child slide show
@@ -11,59 +10,57 @@ h2. Features
 * Auto-playing (optional feature, can start playing or stopped)
 * Pause autoPlay on hover (optional)
 
-
 h2. Usage & Options (defaults)
 
-
 h3. Markup Usage
+
 <pre>
-<div class="parent-child-fader">
-  <!-- Parent Images -->
-  <div class="parent-set">
-    <ul>
-      <li><img src="images/parent-1.jpg" alt=""></li><!-- Parent 1 (associated with Childset 1) -->
-      <li><img src="images/parent-2.jpg" alt=""></li><!-- Parent 2 (associated with Childset 2) -->
-    </ul>
+  <div class="parent-child-fader">
+    <!-- Parent Images -->
+    <div class="parent-set">
+      <ul>
+        <li><img src="images/parent-1.jpg" alt=""></li><!-- Parent 1 (associated with Childset 1) -->
+        <li><img src="images/parent-2.jpg" alt=""></li><!-- Parent 2 (associated with Childset 2) -->
+      </ul>
+    </div>
+
+    <!-- Childset Images -->
+    <div class="child-sets">
+
+      <!-- Childset 1 -->
+      <ul>
+        <li><img src="images/child-1.jpg" alt=""></li>
+        <li><img src="images/child-2.jpg" alt=""></li>
+        <li><img src="images/child-3.jpg" alt=""></li>
+      </ul>
+
+      <!-- Childset 2 -->
+      <ul>
+        <li><img src="images/child-4.jpg" alt=""></li>
+        <li><img src="images/child-5.jpg" alt=""></li>
+        <li><img src="images/child-6.jpg" alt=""></li>
+      </ul>
+
+    </div>
   </div>
-
-  <!-- Childset Images -->
-  <div class="child-sets">
-
-    <!-- Childset 1 -->
-    <ul>
-      <li><img src="images/child-1.jpg" alt=""></li>
-      <li><img src="images/child-2.jpg" alt=""></li>
-      <li><img src="images/child-3.jpg" alt=""></li>
-    </ul>
-
-    <!-- Childset 2 -->
-    <ul>
-      <li><img src="images/child-4.jpg" alt=""></li>
-      <li><img src="images/child-5.jpg" alt=""></li>
-      <li><img src="images/child-6.jpg" alt=""></li>
-    </ul>
-
-  </div>
-</div>
 </pre>
-
 
 h3. jQuery Options
 <pre>
-    $("div.parent-child-fader").parentChildFader({
-      autoplay: true,               // Fader can be set to run on initial load
-      startText:"start",            // start text
-      stopText:"stop",              // stop text
-      pauseOnHover: true,           // If true, the fader will pause on hover
-      showStartStopControl: true,   // If true, the "stop"/"start" toggle button will be built
-      showNavigation: true,         // If true, the navigation buttons will be built
-      fadeInSpeed: 2500,            // Set the speed of fading in
-      fadeOutSpeed: 2500,           // Set the speed of fading out
-      interval: 4000                // Set the duration between fades
-    });
+  $("div.parent-child-fader").parentChildFader({
+    autoplay: true,               // Fader can be set to run on initial load
+    startText:"start",            // start text
+    stopText:"stop",              // stop text
+    pauseOnHover: true,           // If true, the fader will pause on hover
+    showStartStopControl: true,   // If true, the "stop"/"start" toggle button will be built
+    showNavigation: true,         // If true, the navigation buttons will be built
+    fadeInSpeed: 2500,            // Set the speed of fading in
+    fadeOutSpeed: 2500,           // Set the speed of fading out
+    interval: 4000                // Set the duration between fades
+  });
 
 </pre>
-	
+
 h2. Changelog
 
 h3. Version 0.1
