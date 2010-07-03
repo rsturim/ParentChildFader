@@ -1,6 +1,6 @@
 h1. ParentChildFader jQuery Plugin
 
-This is a simple image fader plugin much in the spirit of what you can find with the "jQuery Cycle":http://jquery.malsup.com/cycle/ plugin -- except this implementation allows author to define parents with corresponding children.
+This is a simple image fader plugin much in the spirit of what you can find with the "jQuery Cycle":http://jquery.malsup.com/cycle/ plugin -- except this implementation allows authors to define parents with corresponding children.
 
 
 h2. Features
@@ -11,8 +11,11 @@ h2. Features
 * Auto-playing (optional feature, can start playing or stopped)
 * Pause autoPlay on hover (optional)
 
+
 h2. Usage & Options (defaults)
 
+
+h3. Markup Usage
 <pre>
 <div class="parent-child-fader">
   <!-- Parent Images -->
@@ -44,6 +47,8 @@ h2. Usage & Options (defaults)
 </div>
 </pre>
 
+
+h3. jQuery Options
 <pre>
     $("div.parent-child-fader").parentChildFader({
       autoplay: true,               // Fader can be set to run on initial load
