@@ -9,48 +9,62 @@
 
   <script type="text/javascript">
   $(function () {
-    jQuery($("div#fader")).fader();
+    jQuery($("div.parent-child-fader")).parentChildFader();
 
-    // jQuery($("div#fader")).fader({
-    //   showStartStopControl: true,
-    //   showNavigation: true,
-    //   fadeInSpeed: 2500,
-    //   fadeOutSpeed: 2500,
-    //   interval: 4000
-    // });
-  });
-  </script>
-</head>
+    // $("div.parent-child-fader").parentChildFader({
+      //   autoplay: true,
+      //   startText:"start",
+      //   stopText:"stop",
+      //   pauseOnHover: true,
+      //   showStartStopControl: true,
+      //   showNavigation: true,
+      //   fadeInSpeed: 2500,
+      //   fadeOutSpeed: 2500,
+      //   interval: 4000
+      // });
 
-<body>
-  <div id="page-wrap">
-    <div id="fader">
-      <div class="parent-set">
-        <ul>
-          <li><img src="images/parent-1.jpg" alt=""></li>
-          <li><img src="images/parent-2.jpg" alt=""></li>
-          <li><img src="images/parent-3.jpg" alt=""></li>
-        </ul>
+    });
+    </script>
+  </head>
+
+  <body>
+    <div id="page-wrap">
+      <div class="parent-child-fader">
+        <!-- Parent Images -->
+        <div class="parent-set">
+          <ul>
+            <li><img src="images/parent-1.jpg" alt=""></li><!-- Parent 1 (associated with Childset 1) -->
+            <li><img src="images/parent-2.jpg" alt=""></li><!-- Parent 2 (associated with Childset 2) -->
+            <li><img src="images/parent-3.jpg" alt=""></li><!-- Parent 3 (associated with Childset 3) -->
+          </ul>
+        </div>
+
+        <!-- Childset Images -->
+        <div class="child-sets">
+
+          <!-- Childset 1 -->
+          <ul>
+            <li><img src="images/child-1.jpg" alt=""></li>
+            <li><img src="images/child-2.jpg" alt=""></li>
+            <li><img src="images/child-3.jpg" alt=""></li>
+          </ul>
+
+          <!-- Childset 2 -->
+          <ul>
+            <li><img src="images/child-4.jpg" alt=""></li>
+            <li><img src="images/child-5.jpg" alt=""></li>
+            <li><img src="images/child-6.jpg" alt=""></li>
+          </ul>
+
+          <!-- Childset 3 -->
+          <ul>
+            <li><img src="images/child-7.jpg" alt=""></li>
+            <li><img src="images/child-8.jpg" alt=""></li>
+            <li><img src="images/child-9.jpg" alt=""></li>
+          </ul>
+        </div>
       </div>
-      <div class="child-sets">
-        <ul>
-          <li><img src="images/child-1.jpg" alt=""></li>
-          <li><img src="images/child-2.jpg" alt=""></li>
-          <li><img src="images/child-3.jpg" alt=""></li>
-        </ul>
-        <ul>
-          <li><img src="images/child-4.jpg" alt=""></li>
-          <li><img src="images/child-5.jpg" alt=""></li>
-          <li><img src="images/child-6.jpg" alt=""></li>
-        </ul>
-        <ul>
-          <li><img src="images/child-7.jpg" alt=""></li>
-          <li><img src="images/child-8.jpg" alt=""></li>
-          <li><img src="images/child-9.jpg" alt=""></li>
-        </ul>
-      </div>
+
     </div>
-
-  </div>
-</body>
-</html>
+  </body>
+  </html>

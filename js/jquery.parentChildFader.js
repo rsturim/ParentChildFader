@@ -3,12 +3,12 @@
     var currentIndex = 1,
         parentIndex = 0;
 
-    $.fn.fader = function (options) {
+    $.fn.parentChildFader = function (options) {
 
-        var opts = $.extend({}, $.fn.fader.defaults, options);
+        var opts = $.extend({}, $.fn.parentChildFader.defaults, options);
 
         // Cache existing DOM elements for later
-        var $fader = $("div#fader"),
+        var $parentChildFader = $("div.parent-child-fader"),
             $parentSet = $(".parent-set ul"),
             $parentItems = $parentSet.find("li"),
             $childSets = $(".child-sets ul"),
@@ -28,14 +28,14 @@
 
         if (opts.showNavigation) {
             $navContainer = $("<div id='fader-controls'></div>");
-            $navContainer.insertAfter($fader);
+            $navContainer.insertAfter($parentChildFader);
             buildNavigation();
             $navLinks.eq(0).addClass('selected');
         }
 
         function buildStartStopControl() {
             $startStopControl = $("<a href='#' id='start-stop'></a>").html($playing ? opts.stopText : opts.startText);
-            ($startStopControl).insertAfter($fader);
+            ($startStopControl).insertAfter($parentChildFader);
             $startStopControl.click(function (e) {
                 startStop($playing);
                 e.preventDefault();
@@ -93,7 +93,7 @@
 
         // Pause On Hover
         if (opts.pauseOnHover) {
-            $fader.hover(function () {
+            $parentChildFader.hover(function () {
                 $playing = false;
                 startStop($playing);
             }, function () {
@@ -137,7 +137,7 @@
         };
     };
 
-    $.fn.fader.defaults = {
+    $.fn.parentChildFader.defaults = {
         autoplay: true,
         startText: "start",
         stopText: "stop",

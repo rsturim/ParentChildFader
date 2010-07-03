@@ -10,7 +10,7 @@ a:focus {-moz-outline-style: none;}
   margin:0 auto;
   width:1000px;
 }
-#fader{
+div.parent-child-fader {
   position:relative;
   border: solid 6px #999;
   height:200px;
