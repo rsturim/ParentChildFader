@@ -10,6 +10,8 @@ h2. Features
 * Auto-playing (optional feature, can start playing or stopped)
 * Pause autoPlay on hover (optional)
 
+!http://github.com/rsturim/ParentChildFader/raw/master/images/sample.png(Textist)! 
+
 h2. Usage & Options (defaults)
 
 h3. Markup Usage
